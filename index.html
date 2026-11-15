@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Little Lot | Online Auctions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header><a class="logo" href="#">little lot<span>↗</span></a>
+        <nav><button class="nav active" data-view="browse">Discover</button><button class="nav" data-view="bids">My bids
+                <span id="bid-count">0</span></button><button class="nav" data-view="admin">Admin demo</button></nav>
+        <button id="account" class="outline">Log in</button>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="eyebrow">A SECOND CHAPTER STARTS HERE</div>
+            <h1>Good finds.<br>Great new beginnings.</h1>
+            <p>Discover objects with a little character.<br>Find your favourite. Make your bid. Make it yours.</p><a
+                class="primary" href="#catalogue">Explore auctions <span>↗</span></a>
+            <div class="hero-art" aria-hidden="true"><img class="hero-circle" src="images/hero-circle.png"
+                    srcset="images/hero-circle@2x.png 2x, images/hero-circle@3x.png 3x" alt=""><img class="hero-vase"
+                    src="images/hero-vase.png" srcset="images/hero-vase@2x.png 2x, images/hero-vase@3x.png 3x" alt="">
+                <div class="art-label">CURATED FINDS<br><b>Worth a closer look.</b></div><img class="hero-spark"
+                    src="images/hero-spark.png" srcset="images/hero-spark@2x.png 2x, images/hero-spark@3x.png 3x"
+                    alt="">
+            </div>
+        </section>
+        <section id="catalogue">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">THE COLLECTION</div>
+                    <h2 id="view-title">Find your next favourite</h2>
+                </div><span class="live"><img class="live-dot" src="images/live-dot.png"
+                        srcset="images/live-dot@2x.png 2x, images/live-dot@3x.png 3x" alt=""> Live auctions</span>
+            </div>
+            <div id="demo-note" class="notice" hidden></div>
+            <div class="toolbar"><label class="search">⌕ <input id="search" type="search"
+                        placeholder="Search for something special…" aria-label="Search auctions"></label><select
+                    id="category" aria-label="Category">
+                    <option value="All">All categories</option>
+                    <option>Home & Living</option>
+                    <option>Electronics</option>
+                    <option>Collectibles</option>
+                    <option>Accessories</option>
+                </select><select id="sort" aria-label="Sort auctions">
+                    <option value="ending">Ending soon</option>
+                    <option value="low">Price: low to high</option>
+                    <option value="high">Price: high to low</option>
+                </select><button id="add" class="primary" hidden>+ Add item</button></div>
+            <div id="items" class="grid"></div>
+        </section>
+        <section class="how">
+            <div><span>01 / DISCOVER</span>
+                <h3>Find something you love.</h3>
+                <p>Explore a small collection of interesting things.</p>
+            </div>
+            <div><span>02 / MAKE YOUR MOVE</span>
+                <h3>Place your best bid.</h3>
+                <p>Sign in and join an auction before it ends.</p>
+            </div>
+            <div><span>03 / MAKE IT YOURS</span>
+                <h3>A new chapter, with you.</h3>
+                <p>Won the auction? Submit your order request.</p>
+            </div>
+        </section>
+    </main>
+    <footer><a class="logo" href="#">little lot<span>↗</span></a>
+        <p>A little discovery goes a long way.</p><small>Student project · Browser-local demo · No real payments</small>
+    </footer>
+    <dialog id="modal"><button id="close" class="close" aria-label="Close dialog">×</button>
+        <div id="modal-content"></div>
+    </dialog>
+    <div id="toast" role="status"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
